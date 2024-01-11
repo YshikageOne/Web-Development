@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+input[type="text"], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"], input[type="reset"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #45a049;
+}
+label {
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Document Request Form</h2>
+
+<form action="/action_page.php">
+  <label for="title">Title</label><br>
+  <input type="radio" id="mr" name="title" value="mr">
+  <label for="mr">Mr.</label><br>
+  <input type="radio" id="mrs" name="title" value="mrs">
+  <label for="mrs">Mrs.</label><br>
+  <input type="radio" id="miss" name="title" value="miss">
+  <label for="miss">Miss</label><br>
+
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+  <label for="studentid">Upload Student ID</label>
+  <input type="file" id="studentid" name="studentid"><br>
+
+  <label for="email">E-Mail</label>
+  <input type="email" id="email" name="email" placeholder="Your email.."><br>
+
+  <label for="mobile">Mobile</label>
+  <input type="tel" id="mobile" name="mobile" placeholder="Your mobile number.."><br>
+
+  <label for="document">Requested Document</label><br>
+  <input type="checkbox" id="transcript" name="document" value="transcript">
+  <label for="transcript">Transcript of Records</label><br>
+  <label for="transcript">Certificate of Enrollment</label><br>]
+  <label for="transcript">Good Moral Certificate</label><br>
+  <label for="transcript">Generated Schedule and Assessmen</label><br>
+  <label for="transcript">Statement of Account</label><br>
+
+  <label for="purpose">Purpose</label>
+  <textarea id="purpose" name="purpose" placeholder="Write something.."></textarea><br>
+
+  <label for="date">Date Needed</label>
+  <input type="date" id="date" name="date"><br>
+
+  <label for="claim">Mode of claim</label><br>
+  <input type="radio" id="pickup" name="claim" value="pickup">
+  <label for="pickup">Pick up</label><br>
+  <input type="radio" id="courier" name="claim" value="courier">
+  <label for="courier">Courier</label><br>
+
+  <label for="payment">Upload proof of payment</label>
+  <input type="file" id="payment" name="payment">
+
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>

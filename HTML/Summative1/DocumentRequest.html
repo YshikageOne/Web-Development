@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summative by Clyde Yu</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+<body>
+    
+    <h1 class = "intro-text">Document Request Form</h1> <!--This is the title being styled in css to make it blue and in the center-->
+
+    <div class="center"> <!-- Container for forms to be in the center-->
+        <form> <!--This is the main form-->
+            <div class="form-group" required>
+                <!--This is the radio button selection for the title-->
+                <div class="radio-group">
+                    <input type="radio" id="mr" name="title" value="mr">
+                    <label for="mr" class="text-big">Mr.</label>
+
+                    <input type="radio" id="mrs" name="title" value="mrs">
+                    <label for="mrs" class="text-big">Mrs.</label>
+
+                    <input type="radio" id="ms" name="title" value="ms">
+                    <label for="ms" class="text-big">Ms.</label>
+                </div>
+            </div>
+
+            <!--Names-->
+            <div class="form-group">
+                <label class="label" for="fname">First Name :</label>
+                <input class="input" type="text" id="fname" name="fname" placeholder="First Name" required>
+            </div>
+
+            <div class="form-group">
+                <label class="label" for="lname">Last Name :</label>
+                <input class="input" type="text" id="lname" name="lname" placeholder="Last Name" required>
+            </div>
+
+            <!--File upload for the student ID-->
+            <div class="form-group">
+                <label class="label" for="studentID">Upload Student ID :</label>
+                <input type="file" id="studentID" name="studentID" accept=".jpg, .jpeg, .png, .docx, .pdf" required>
+            </div>
+            
+            <!--Email-->
+            <div class = "form-group">
+                <label class = "label" for = "email">Email :</label>
+                <input class = "input" type  = "email" id = "email" name = "email" placeholder="youremail@email.com" required>
+            </div>
+
+            <!--Mobile Number-->
+            <div class = "form-group">
+                <label class = "label" for = "mobileNumber">Mobile Number :</label>
+                <input class = "input" type = "tel" id = "mobileNumber" name = "mobileNumber" placeholder="+63" required>
+            </div>
+
+            <!--Requested Documents-->
+            <div class = "form-group">
+                <label class = "label" for = "documents">Requested Documents</label>
+
+                <div class = "checkbox-group">
+                    <input type = "checkbox" id = "transcript" name = "documents" value = "transcript">
+                    <label for = "transcript">Transcript of Records</label><br>
+
+                    <input type = "checkbox" id = "enrollment" name = "documents" value = "enrollment">
+                    <label for = "enrollment">Certificate of Enrollment</label><br>
+
+                    <input type = "checkbox" id = "goodmoral" name = "documents" value = "goodmoral">
+                    <label for = "goodmoral">Good Moral Certificate</label><br>
+
+                    <input type = "checkbox" id = "gsa" name = "documents" value = "gsa">
+                    <label for = "gsa">General Schedule and Assessment</label><br>
+
+                    <input type = "checkbox" id = "soa" name = "documents" value = "soa">
+                    <label for = "soa">Statement of Account</label><br>
+                </div>
+            </div>
+
+            <!--Purpose-->
+            <div class = "form-group">
+                <label class = "label" for = "purpose">Purpose</label>
+                <textarea class = "input" id = "purpose" rows="5" cols="25" placeholder="Purpose" required></textarea>
+            </div> 
+
+            <!--Date Needed-->
+            <div class = "form-group">
+                <label class = "label" for = "dateNeeded">Date Needed</label>
+                <input class = "input" type = "date" id = "dateNeeded" required>
+            </div>
+
+            <!--Mode of Claim-->
+            <div class = "form-group">
+                <label class = "label" for = "claimMode">Mode of Claim</label>
+
+                <div class="radio-group" required>
+                    <input type="radio" id="pickup" name="title" value="pickup">
+                    <label for="pickup" class="text-big">Pick-up</label>
+
+                    <input type="radio" id="courier" name="title" value="courier">
+                    <label for="courier" class="text-big">Courier</label>
+                </div>
+
+            </div>
+
+            <!--Upload Payment-->
+            <div class = "form-group">
+                <label class = "label" for = "payment">Upload Proof of Payment</label>
+                <input type="file" id="payment" name="payment" accept=".jpg, .jpeg, .png, .docx, .pdf" required>
+            </div>
+
+            <!--Form Buttons for submission and resetting-->
+            <div class="form-buttons">
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+/*Styles the introductory text*/
+.intro-text {
+    color: blue;
+    text-align: center;
+    font-size: 45px;
+}
+
+/*Centers the content within the .center class using flexbox */
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+/*Styles the form groups to display as a grid with two columns*/
+.form-group {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+/*Styles the radio button group to display inline with a gap between each item */
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/*Customizes the appearance of radio buttons*/
+input[type="radio"] {
+    margin-top: 0;
+    transform: scale(1.2);
+    align-self: start;
+}
+
+/*Styles the file input*/
+input[type = "file"]{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/*Customizes the appearance of checkboxes*/
+input[type = "checkbox"]{
+    transform: scale(1.2);
+    margin-bottom: 15px;
+}
+
+/*Styles the submit button*/
+input[type = "submit"]{
+    font-size: 20px;
+}
+
+/*Styles the reset button*/
+input[type = "reset"]{
+    font-size: 20px;
+}
+
+/*Centers the form buttons horizontally within their container */
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*Styles text associated with big text elements*/
+.text-big {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+/*Styles labels*/
+.label {
+    display: inline-block;
+    margin-right: 100px;
+    width: 225px;
+    font-size: 20px;
+}
+
+/*Styles input elements*/
+.input {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/*Styles the checkbox group*/
+.checkbox-group{
+    font-size: 20px;
+}
