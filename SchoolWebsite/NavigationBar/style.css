@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Single+Day&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main{
+    font-size: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Source Code Pro", monospace;
+}
+
+h2{
+    text-align: center;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+}
+
+#navigation li{
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 25px;
+    color: #333;
+}
+
+#navigation a{
+    color:white;
+    font-family: "Single Day", cursive;
+}
+
+#navigation a:hover{
+    background-color: #333;
+    color: red;
+}
+
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+main{
+    margin-top: 10px;
+}
+
+.container{
+    width: 750px; 
+    height: 450px; 
+    background: linear-gradient(to right, rgba(128,128,128,0.5), rgba(192,192,192,0.5));
+    border-radius: 20px; 
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 325px;
+    animation: slideUp 1s ease-out;
+}
+
+p{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.walter{
+    height: 350px;
+    padding-left: 25px;
+}
+
+.royale{
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.screen{
+    height: 350px;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+
+.image-text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+#musicHyperLink li{
+    text-align: center;
+    font-size: 50px;
+}
+
+#musicHyperLink a{
+    color:white;
+    font-family: "Arvo", serif;
+    margin-left: 25px;
+}
+
+.media{
+    display: flex;
+    align-items: center;
+}
+
+.audio-player{
+    margin-left: 75px;
+    align-items: center;
+}
+
+.shh{
+    text-decoration: none;
+    color: inherit;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
