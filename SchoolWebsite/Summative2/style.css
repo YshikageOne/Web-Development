@@ -448,25 +448,6 @@ footer .contact-us i {
     color: #666;
 }
 
-.special-checkout {
-    background-color: #4CAF50; 
-    padding: 10px 20px;
-    margin-top: 20px;
-    font-family: 'Patrick Hand', cursive;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    width: 100%; 
-    transition: background-color 0.3s, transform 0.2s;
-}
-
-.special-checkout:hover {
-    background-color: #45a049; 
-    transform: scale(1.05); 
-}
-
 .cart-icon-container {
     position: fixed;
     right: 20px;
@@ -478,6 +459,23 @@ footer .contact-us i {
     font-size: 50px;
     color: #fff;
     cursor: pointer;
+}
+
+.special-checkout {
+    background-color: greenyellow; 
+    color: white;
+    padding: 15px 20px; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2em; 
+    border: none; 
+    border-radius: 10px; 
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.2s, background-color 0.3s; 
+    cursor: pointer;
+    display: block;
+    margin: 20px auto; 
 }
 
 .remove-item-btn {
