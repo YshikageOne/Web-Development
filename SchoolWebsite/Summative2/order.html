@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - KYO Coffee</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <!--Header / Navigation-->
+    <header>
+        <div>
+            <a href="main.html">
+                <img src = "assets/logo.jpg" alt = "Cafe Logo" id = "logo">
+            </a>
+        </div>
+        <nav>
+            <div class="nav-left"> 
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="order.html">Order</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Menu Categories-->
+    <section class = "menu-section">
+        <aside class="menu-categories">
+            <ul>
+                <li><button class="category-btn" data-category="IcedEspresso">Iced Espresso</button></li>
+                <li><button class="category-btn" data-category="IcedBlendedEspresso">Iced Blended Espresso</button></li>
+                <li><button class="category-btn" data-category="IcedNonCoffee">Iced Non Coffee</button></li>
+                <li><button class="category-btn" data-category="IcedBlendedNonCoffee">Iced Blended Non Coffee</button></li>
+                <li><button class="category-btn" data-category="Matcha">Matcha</button></li>
+                <li><button class="category-btn" data-category="FrappeEspresso">Frappe Espresso</button></li>
+                <li><button class="category-btn" data-category="HotEspresso">Hot Espresso</button></li>
+                <li><button class="category-btn" data-category="HotNonCoffee">Hot Non Coffee</button></li>
+                <li><button class="category-btn" data-category="FrappeNonCoffee">Frappe Non Coffee</button></li>
+                <li><button class="category-btn" data-category="PremiumCoffee">Premium Coffee</button></li>
+                <li><button class="category-btn" data-category="ThaiMilktea">Thai Milktea</button></li>
+                <li><button class="category-btn" data-category="FruitSoda">Fruit Soda</button></li>
+                <li><button class="category-btn" data-category="FruitTea">Fruit Tea</button></li>
+                <li><button class="category-btn" data-category="RiceMeal">Rice Meal</button></li>
+                <li><button class="category-btn" data-category="ChickenWings">Chicken Wings</button></li>
+                <li><button class="category-btn" data-category="Pasta">Pasta</button></li>
+                <li><button class="category-btn" data-category="Sweets">Sweets</button></li>
+                <li><button class="category-btn" data-category="SnacksSandwiches">Snacks and Sandwiches</button></li>
+                <li><button class="category-btn" data-category="Croffles">Croffles</button></li>
+            </ul>
+            <div class="cart-icon-container">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <div id="cart" class="cart-dropdown">
+                    <!-- Cart items will be populated here by JavaScript -->
+                </div>
+            </div>
+        </aside>
+        <div class="menu-items" id="selectedMenuItems">
+            <!-- Menu items will be populated here by JavaScript -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="newsletter">
+            <h2>Stay up to date</h2>
+            <p>Don't miss out on exclusive offers and announcements</p>
+            <form action="#" method="post">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <div class="social-media">
+            <h2>Stay Connected</h2>
+            <a href="https://www.instagram.com/kyo_coffeedvo"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100085361590002"><i class="fa fa-facebook"></i></a>
+        </div>
+        <div class="contact-us">
+            <h2>Contact Us</h2>
+            <p><i class="fa fa-map-marker"></i> Mc Arthur Highway, Bago Aplaya (beside Mc Jollanieking Karenderya), Talomo District, Davao City</p>
+            <p><i class="fa fa-phone"></i> 09423910528</p>
+            <p><i class="fa fa-envelope"></i> kyocoffeedvo@gmail.com</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
